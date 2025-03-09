@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <!-- This is the bookstore's home page ,it introduces customers to the bookstore, it also contains REVIEWS and ratings,it also informs customers about promotions and bestsellers -->
+
+   <head>
+      <title>Oasis Bookstore</title>
+   </head>
+
+   <body style="color: #5A5A5A; font-family: Arial, sans-serif; margin: 0; padding-top: 40px;background-color: #F5F5DC">
+
+      <!-- 40% off Sale Promotion Bar -->
+      <div style="background-color:  #3b4458 ; color: #FFFFFF; text-align: center; padding: 15px; font-size: 16px; font-weight: bold; position: fixed; top: 0; width: 100%; z-index: 1000;">
+         🚨 March Sale – Up to 40% Off Our Exclusive Books and Stationeries! 🚨
+      </div>
+
+
+      <!-- This is the navigation bar at the top -->
+      <nav style="text-align: right; padding: 20px; margin-top: 20px;">
+         <a href="BookStore.html" style="margin-left: 20px; text-decoration: none; color: #3b4458; font-weight: bold;">Home</a>
+         <a href="aboutus.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">About Us</a>
+         <a href="contactpage.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">Contact Us</a>
+         <a href="productcategory.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">Product Categories</a>
+         <a href="BookStore.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">My Account 👤</a>
+         <a href="ShoppingCartPage.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;"> My Cart🛒</a>
+      </nav>
+
+
+      <!-- Website name and Search Bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+         <h1 style="margin: 0; font-size: 36px; color: #3b4458; display: flex; align-items: center; flex-grow: 1;">Oasis Bookstore <span style="font-size: 36px;">📚</span></h1>
+         <div style="display: flex; align-items: center; margin-right: 20px;">
+            <input type="text" placeholder="Search by Title, Author, Keyword or ISBN..." id="searchInput" style="padding: 10px; font-size: 16px; border-radius: 5px; border: 2px solid #8A7F7D; width: 900px; margin-right: 10px;" />
+            <button
+               onclick="alert('Searching...')"
+               style="padding: 10px 15px; font-size: 16px; background-color: #3b4458; 
+               color: white; border: none; border-radius: 5px; cursor: pointer;"
+               >
+            Search
+            </button>
+         </div>
+
+
+         <!-- This is the free delivery text next to the search bar -->
+         <span style="font-size: 16px; color: #3b4458; font-weight: bold;">
+         Free delivery for all orders over R500
+         </span>
+      </div>
+
+
+      <!-- Code for banner at the top with an image and  a call to action -->
+      <div style="position: relative; width: 100%; height: 300px; background-image: url('images/BookstoreImage.jpeg'); background-size: cover; background-position: center; text-align: center; color: white;">
+         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <h2 style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Clearance Sale!</h2>
+            <p style="font-size: 20px; margin-bottom: 20px;">Up to 70% off on books accessories!</p>
+            <a href="productcategory.html" style="padding: 10px 20px; font-size: 16px; background-color: #3b4458; color: white; text-decoration: none; border-radius: 5px;">Shop Now</a>
+         </div>
+      </div>
+
+
+
+      <!-- Body with a welcome section, recently viewed section, and REVIEWS -->
+      <div style="text-align: center; padding: 100px 20px; color: #3b4458">
+         <h1>Welcome to Oasis Bookstore</h1>
+         <h3>Discover stories as warm and inviting as our shelves.</h3>
+         <p>
+            Dive into a world of endless possibilities with our carefully curated collection! From gripping novels to inspiring educational books, creative drawing books, and stylish journals, we offer something for every reader.
+            Explore our wide range of stationery, accessories, and more – all at affordable prices. Start your journey today and find your next favorite book or accessory, all in one place.
+         </p>
+         <div class="cta-button">
+            <button
+               onclick="window.location.href='productcategory.html'"
+               style="padding: 15px 30px; font-size: 18px; background-color: #3b4458; color: white; border: none; border-radius: 5px; cursor: pointer;background-position: center; text-align: center; "
+               >
+            Browse Our Collection
+            </button>
+         </div>
+      </div>
+
+
+      <!-- Recently Viewed Section -->
+      <div class="recently-viewed" ;>
+         <h2 style="color: #3b4458; text-align: center;">Our Top Sellers</h2>
+         <div class="book-slider" style="display: flex; overflow-x: auto; gap: 30px;">
+            <div class="book-item">
+               <img src="images/HomePageBook1.avif" alt="Book 1" style="width: 150px; height: auto;" />
+               <p>A Good Girl's Guide To Murder</p>
+               <p>By Holly Jackson</p>
+            </div>
+            <div class="book-item">
+               <img src="images/HomePageBook3.avif" alt="Book 2" style="width: 150px; height: auto;" />
+               <p>It Ends With Us By Collen Hover</p>
+               <p>By Collen Hover</p>
+            </div>
+            <div class="book-item">
+               <img src="images/HomePageBook2.avif" alt="Book 3" style="width: 150px; height: auto;" />
+               <p>Atomic Habits By James Clear</p>
+            </div>
+            <div class="book-item">
+               <img src="images/HomePageBook4.avif" alt="Book 4" style="width: 150px; height: auto;" />
+               <p>A court of Mist & Furry By Sarah J. Maas</p>
+            </div>
+            <div class="book-item">
+               <img src="images/HomePageBook5.avif" alt="Book 4" style="width: 150px; height: auto;" />
+               <p>The Stellenbosch Mafia By Pieter du Toit</p>
+            </div>
+         </div>
+      </div>
+
+
+      <-- Reviews Section -->
+      <div style="background-color: #F5F5DC; padding: 40px 20px; text-align: center;">
+         <h2 style="font-size: 24px; color: #3b4458; margin-bottom: 20px;">What Our Customers Say</h2>
+         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <!-- Review 1 -->
+            <div style="background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 280px; text-align: center;">
+               <p style="font-size: 16px; color: #555; font-style: italic; margin-bottom: 10px;">"My go to Online Store.This bookstore is amazing! Highly recommend!"</p>
+               <div style="color: #ffd700; font-size: 18px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+               <p style="font-size: 14px; color: #333; font-weight: bold;">- Zandile N.</p>
+            </div>
+            <!-- Review 2 -->
+            <div style="background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 280px; text-align: center;">
+               <p style="font-size: 16px; color: #555; font-style: italic; margin-bottom: 10px;">
+                  "As someone who isn’t very tech-savvy, I appreciate how easy it is to shop at Oasis Bookstore and the books are quite affordable. Will shop again!"
+               </p>
+               <div style="color: #ffd700; font-size: 18px;">&#9733;&#9733;&#9733;&#9733;</div>
+               <p style="font-size: 14px; color: #333; font-weight: bold;">- Tsafelo P.</p>
+            </div>
+            <!-- Review 3 -->
+            <div style="background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 280px; text-align: center;">
+               <p style="font-size: 16px; color: #555; font-style: italic; margin-bottom: 10px;">
+                  " I never knew an online bookstore could offer such a fantastic range of stationery! From notebooks to pens, Oasis Bookstore has it all. The quality is top-notch and is they're perfect for both work and personal use.
+                  Excellent service!"
+               </p>
+               <div style="color: #ffd700; font-size: 18px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+               <p style="font-size: 14px; color: #333; font-weight: bold;">- Elizabeth C.</p>
+            </div>
+         </div>
+         <!-- View More Button -->
+         <div style="margin-top: 20px;">
+            <a href="BookStore.html" style="color: #0066cc; text-decoration: none; font-size: 16px; font-weight: bold;">View More Reviews</a>
+         </div>
+      </div>
+
+
+
+      <!-- Customer Services Section with different links to different pages, help page, contact us page , faq , etc -->
+      <div style="background-color: black; padding: 20px; display: flex; justify-content: space-between; text-align: left;">
+         <div style="flex: 1;">
+            <h3 style="font-size: 20px; color: white; margin-bottom: 20px;">CUSTOMER SERVICES</h3>
+            <ul style="list-style-type: none; padding: 0; color: #333;">
+               <li><a href="informationOnPurchasing.html" style="text-decoration: none; color: white;">Information on Purchasing</a></li>
+               <li><a href="contactpage.html" style="text-decoration: none; color: white;">Contact Us</a></li>
+               <li><a href="contactpage.html" style="text-decoration: none; color: white;">Help</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">Track Order</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">Delivery Information</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">Guarantee & Returns</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">Privacy Policy</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">Terms and Conditions</a></li>
+               <li><a href="BookStore.html" style="text-decoration: none; color: white;">FAQs</a></li>
+            </ul>
+         </div>
+
+
+         <!-- The BookStore Social Media Links Section -->
+         <div style="flex: 1; text-align: center;">
+            <h3 style="font-size: 20px; color: white; margin-bottom: 20px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 20px;">
+               <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+               <img src="images/facebookicon.png" alt="Facebook" style="width: 30px; height: 30px; transition: transform 0.3s ease;" />
+               </a>
+               <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+               <img src="images/instagramicon.jpeg" alt="Instagram" style="width: 30px; height: 30px; transition: transform 0.3s ease;" />
+               </a>
+               <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
+               <img src="images/twitter.png" alt="Twitter" style="width: 30px; height: 30px; transition: transform 0.3s ease;" />
+               </a>
+               <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none;">
+               <img src="images/linkedIn.png" alt="LinkedIn" style="width: 30px; height: 30px; transition: transform 0.3s ease;" />
+               </a>
+            </div>
+         </div>
+      </div>
+   </body>
+
+
+   <!-- Footer Section -->
+   <footer style="background-color: #3b4458; color: white; padding: 20px; text-align: center;">
+      <p style="font-size: 16px; margin: 0;">© 2025 Oasis Bookstore. All rights reserved.</p>
+   </footer>
+</html>

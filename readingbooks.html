@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the reading books category, contains different sub categories and types of books , prices and ratings -->
+<!-- The first product has product information, by clicking the book it will take you to the product information page -->
+<!-- Also contains a link to the featured authors page at the bottom -->
+
+   <head>
+      <title>Oasis Bookstore</title>
+   </head>
+
+
+   <body style="color: #5A5A5A; font-family: Arial, sans-serif; margin: 0; padding-top: 40px;background-color: #F5F5DC">
+      
+      <div style="background-color:  #3b4458 ; color: #FFFFFF; text-align: center; padding: 15px; font-size: 16px; font-weight: bold; position: fixed; top: 0; width: 100%; z-index: 1000;">
+         🚨 March Sale – Up to 40% Off Our Exclusive Books and Stationeries! 🚨 
+      </div>
+
+      <!-- navigation bar -->
+      <nav style="text-align: right; padding: 20px; margin-top: 20px;">
+         <a href="BookStore.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">Home</a>
+         <a href="aboutus.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">About Us</a>
+         <a href="contactpage.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">Contact Us</a>
+         <a href="productcategory.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">Product Categories</a>
+         <a href="readingbooks.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;">My Account 👤</a>
+         <a href="ShoppingCartPage.html" style="margin-left: 20px; text-decoration: none; color: #3b4458;"> My Cart🛒</a>
+      </nav>
+
+
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+         <!-- Website Name and Logo -->
+         <h1 style="margin: 0; font-size: 36px; color: #3b4458; display: flex; align-items: center; flex-grow: 1;">
+            Oasis Bookstore <span style="font-size: 36px;">📚</span>
+         </h1>
+
+       
+	
+        
+         <div style="display: flex; align-items: center; margin-right: 20px;">
+            <input type="text" placeholder="Search by Title, Author, Keyword or ISBN..." id="searchInput" 
+               style="padding: 10px; font-size: 16px; border-radius: 5px; border: 2px solid #8A7F7D; width: 900px; margin-right: 10px;">
+            <button onclick="alert('Searching...')" style="padding: 10px 15px; font-size: 16px; background-color: #3b4458; 
+               color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Search
+            </button>
+         </div>
+
+
+         <!-- Free Delivery Text -->
+         <span style="font-size: 16px; color: #3b4458; font-weight: bold;">
+         Free delivery for all orders over R500
+         </span>
+      </div>
+
+      <head>
+	 <a href="productcategory.html" style="display: inline-block; background-color:#3b4458; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; cursor: pointer;">
+   		 Go Back
+	 </a>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Book Categories</title>
+      </head>
+
+      <body style="font-family: Arial, sans-serif; background-color: #F5F5DC; margin: 0; padding: 0;">
+
+         <div style="width: 95%; margin: 20px auto;">
+            <h1 style="text-align: center; font-size: 32px; color: #333;">Reading Books</h1>
+
+            <!-- Recently Viewed Section -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Recently Viewed</h2>
+               <p> Books you have recently viewed</p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%;height:17% ;text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="ProductDetailPage1.html" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook3.avif" alt="Book 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">It Ends With Us</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Collen Hover</p>
+                           <p style="font-size: 14px; color: #666;">Price: R329.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%;height:17%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook2.avif" alt="Book 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Atomic Habits</h4>
+                           <p style="font-size: 14px; color: #666;">Author: James Clear</p>
+                           <p style="font-size: 14px; color: #666;">Price: R260.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%;height:20%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook5.avif" alt="Book 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Stellenbosch Mafia</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Pieter Du Toit>
+                           <p style="font-size: 14px; color: #666;">Price: Was R300 Now R100</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+
+            <!-- Best Sellers Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Best Sellers</h2>
+               <p>the most popular and highly-rated books that readers can't get enough of. From gripping thrillers to inspiring self-help and timeless classics, these must-read titles have captured hearts and minds worldwide.</p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/BestSeller1.avif" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The House Maid</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Freida McFadden</p>
+                           <p style="font-size: 14px; color: #666;">Price: R384.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook1.avif" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A Good Girl's Guide To Murder</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Holly Jackson</p>
+                           <p style="font-size: 14px; color: #666;">Price: R149.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook4.avif" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A court of Mist And Fury</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Sarah J. Maas</p>
+                           <p style="font-size: 14px; color: #666;">Price: R599.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Fiction Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Fiction</h2>
+               <p> For readers who love imaginative stories that transport them to new worlds, explore different lives, and offer an escape from reality. </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%;  ;text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/fiction1romance.avif" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Seven Year Slip</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Ashley Poston</p>
+                           <p style="font-size: 14px; color: #666;">Price: R199.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/fiction2fantasy.avif" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Wheel Time</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Robert Jordan</p>
+                           <p style="font-size: 14px; color: #666;">Price: R549.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/fiction3thriller.avif" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">First Lie Wins</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Ashley Eston</p>
+                           <p style="font-size: 14px; color: #666;">Price: R199.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Non fiction category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Non fictional Books</h2>
+               <p> for readers seeking real stories and factual information. It covers true events, real people, and practical knowledge, making it ideal for those who want to learn, explore history, or gain insights into the world around them </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/nonfiction1.avif" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Artirt's Way</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Julia Cameroon</p>
+                           <p style="font-size: 14px; color: #666;">Price: R354.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/nonfiction2.webp" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Finding Me</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Viola Davis</p>
+                           <p style="font-size: 14px; color: #666;">Price: R349.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/nonfiction3.avif" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">When Breath Becomes Air</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Paul Calanthi</p>
+                           <p style="font-size: 14px; color: #666;">Price: R299.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Educational Books Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Educational</h2>
+               <p> for readers looking to expand their knowledge and skills. </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/educational1.webp" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">How To Communicate With Confidence</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Dr. Mike Bechtle</p>
+                           <p style="font-size: 14px; color: #666;">Price: R199.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/educational2.webp" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Power</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Robert Creene</p>
+                           <p style="font-size: 14px; color: #666;">Price: R799.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/educational3.webp" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Why Has Nobody Told Me This Before</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Dr Julie Smith</p>
+                           <p style="font-size: 14px; color: #666;">Price: R299.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Students & Academics Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Students & Academics</h2>
+               <p> For students and academics looking to expand their knowledge. These books are designed to inform, and provide insights in various subjects, making them perfect for those seeking to learn and grow in their field of study or profession.</p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/ISTextbook.webp" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Principles of Information Systems</h4>
+                           <p style="font-size: 14px; color: #666;">Author: George W.</p>
+                           <p style="font-size: 14px; color: #666;">Price: R694.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/student2.webp" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Saica Student Handbook</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Holly Jackson</p>
+                           <p style="font-size: 14px; color: #666;">Price: R800.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/student3.webp" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A Student Approach To Income Tax: Business Activities</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Lexis Nexis</p>
+                           <p style="font-size: 14px; color: #666;">Price: R599.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Bargain Hunters Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Bargain Hunters</h2>
+               <p> For readers looking to find books at the cheapest prices </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/BestSeller1.avif" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The House Maid</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Freida McFadden</p>
+                           <p style="font-size: 14px; color: #666;">Price: Was R349.99 Now R99.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook1.avif" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A Good Girl's Guide To Murder</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Holly Jackson</p>
+                           <p style="font-size: 14px; color: #666;">Price: Was R549.99 Now R149.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook4.avif" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A court of Mist And Fury</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Sarah J. Maas</p>
+                           <p style="font-size: 14px; color: #666;">Price:Was R349.99 Now R129.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- E-book & Audiobook Category -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">E-book & Audiobook Enthusiasts</h2>
+               <p> For readers who prefer the digital versions of books and for those who prefer listening to audiobooks rather than reading them </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/ebook1.webp" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Subtle Art Of Not Giving A F*ck [eBook]</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Mark Manson</p>
+                           <p style="font-size: 14px; color: #666;">Price: R384.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/ebook2.webp" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Forth Wing [Free eBook]</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Rebecca Yannos</p>
+                           <p style="font-size: 14px; color: #666;">Price: R0.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/ebook3.webp" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">The Dark Room [eBook]</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Ivan King</p>
+                           <p style="font-size: 14px; color: #666;">Price: R599.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Parents & Guardians Section -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;">Parents & Guardians</h2>
+               <p> These books are for all parents and guardians </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/parents1.jpg" alt="Best Seller 1" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">Parents and Guardians</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Freida McFadden</p>
+                           <p style="font-size: 14px; color: #666;">Price: R384.99</p>
+                           <p style="color: #f39c12;">★★★★★</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/parents2.jpg" alt="Best Seller 2" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">To Parents & Guardians , and Others</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Avery Newman</p>
+                           <p style="font-size: 14px; color: #666;">Price: R349.00</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div style="width: 30%; text-align: center; background-color: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                     <a href="#" style="text-decoration: none; color: inherit;">
+                        <img src="images/HomePageBook4.avif" alt="Best Seller 3" style="width: 40%; height: 40%; border-radius: 5px;">
+                        <div style="margin-top: 10px;">
+                           <h4 style="font-size: 16px; color: #333;">A court of Mist And Fury</h4>
+                           <p style="font-size: 14px; color: #666;">Author: Sarah J. Maas</p>
+                           <p style="font-size: 14px; color: #666;">Price: R299.99</p>
+                           <p style="color: #f39c12;">★★★★☆</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <a href="#" style="text-decoration: none; color: #007BFF;">View More</a>
+            </div>
+
+
+            <!-- Featured Authors Page Section -->
+            <div style="margin-bottom: 40px;">
+               <h2 style="font-size: 22px; color: #333; margin-bottom: 10px;"> Featured Author's Page</h2>
+               <p> Explore the works and stories of some of the most influential and creative minds in literature. Our Featured Authors section highlights talented writers who have captivated readers with their unique voices and storytelling styles. </p>
+               <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                  <!-- Repeat similar blocks for books in this category -->
+               </div>
+               <a href="FeaturedAuthorsPage.html" style="text-decoration: none; color: #007BFF;">Click Here To View Featured Author(s) </a>
+            </div>
+   </body>
+   </div>
+
+
+   <!-- information on purchasing ,Help links, FAQs, Contact page link, Ts & Cs , etc -->
+   <div style="background-color: black; padding: 20px; display: flex; justify-content: space-between; text-align: left;">
+      <div style="flex: 1;">
+         <h3 style="font-size: 20px; color: white; margin-bottom: 20px;">CUSTOMER SERVICES</h3>
+         <ul style="list-style-type: none; padding: 0; color: #333;">
+            <li><a href="informationOnPurchasing.html" style="text-decoration: none; color: white;">Information on Purchasing</a></li>
+            <li><a href="contactpage.html" style="text-decoration: none; color: white;">Contact Us</a></li>
+            <li><a href="contactpage.html" style="text-decoration: none; color: white;">Help</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">Track Order</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">Delivery Information</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">Guarantee & Returns</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">Privacy Policy</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">Terms and Conditions</a></li>
+            <li><a href="readingbooks.html" style="text-decoration: none; color: white;">FAQs</a></li>
+         </ul>
+      </div>
+
+
+      <!-- Social Media Links Section -->
+      <div style="flex: 1; text-align: center;">
+         <h3 style="font-size: 20px; color: white; margin-bottom: 20px;">Follow Us</h3>
+         <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+            <img src="images/facebookicon.png" alt="Facebook" style="width: 30px; height: 30px; transition: transform 0.3s ease;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+            <img src="images/instagramicon.jpeg" alt="Instagram" style="width: 30px; height: 30px; transition: transform 0.3s ease;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
+            <img src="images/twitter.png" alt="Twitter" style="width: 30px; height: 30px; transition: transform 0.3s ease;">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none;">
+            <img src="images/linkedIn.png" alt="LinkedIn" style="width: 30px; height: 30px; transition: transform 0.3s ease;">
+            </a>
+         </div>
+      </div>
+   </div>
+  
+
+   <footer style="background-color: #3b4458; color: white; padding: 20px; text-align: center;">
+      <p style="font-size: 16px; margin: 0;">© 2025 Oasis Bookstore. All rights reserved.</p>
+   </footer>
+
+</html>

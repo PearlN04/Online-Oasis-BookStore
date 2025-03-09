@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<a href="ShoppingCartPage.html" style="display: inline-block; background-color:#3b4458; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; cursor: pointer;">
+   		 Go Back
+	</a>
+<!-- This is the CheckOut Page, It contains delivery information , the three items the customer has bought, summary and the total price -->
+<head>
+    <title>Checkout Page</title>
+</head>
+
+
+<body style="font-family: Arial, sans-serif; background: #f5f5f5; margin: 0; padding: 20px;background-color:#F5F5DC">
+
+   
+    <div style="max-width: 900px; margin: auto;">
+
+        <!-- Header Section with the title Checkout  -->
+        <h2 style="text-align: center;color: #3b4458">Checkout</h2>
+
+        <!-- Delivery Info , delivey methods and address -->
+        <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+            <h3>Delivery Information</h3>
+            <p><strong>Delivery Method:</strong> Standard Delivery <a href="#" style="color: #007bff; text-decoration: none;">Change</a></p>
+
+            <p><strong>Delivery Address:</strong> <a href="#" style="color: #007bff; text-decoration: none;">Change</a></p>
+            <p>368A Road, Obsevatory, Cape Town, 7925 <br> Olly Smith, 073 526 7607</p>
+        </div>
+
+
+ <!-- Items Overview, 3 items , these 3 items have their product description in the following html files ProductDetailPage1, ProductDetailPage2 and
+ProductDetail3.html -->
+
+        <div style="background: white; padding: 20px; border-radius: 12px;">
+            <h3>Items for Delivery</h3>
+
+            <!-- Product 1 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="images/HomePageBook3.avif" alt="Book" style="border-radius: 8px; margin-right: 20px;height:10%;width:10%">
+                <div>
+                    <p><strong>It Ends With Us By Collen Hoover</strong></p>
+                    <p>Price: R 329.99</p>
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <img src="images/stationery1.webp" alt="Coloured pens" style="border-radius: 8px; margin-right: 20px;height:5%;width:10%">
+                <div>
+                    <p><strong>12 x Nexx Colour Pencils</strong></p>
+                    <p>Price: R 30.00</p>
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div style="display: flex; align-items: center;">
+                <img src="images/bookmark.jpeg" alt="Book 3" style="border-radius: 8px; margin-right: 20px;height:8%;width:10%">
+                <div>
+                    <p><strong> 2 x Bookmarks</strong></p>
+                    <p>Price: R 40.00</p>
+                </div>
+            </div>
+        </div>
+
+        <p> </p>
+
+
+        <!-- Order Summary Section , with price, delivery fee and checkout button-->
+        <div style="background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+            <h3>Order Summary</h3>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <p>Item (3 products)</p>
+                <p>R 399.99 </p>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <p>Delivery Fee</p>
+                <p>R 75</p>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid #ddd;">
+
+            <div style="display: flex; justify-content: space-between;">
+                <p><strong>Total to Pay:</strong></p>
+                <p><strong>R 374.99</strong></p>
+            </div>
+
+            <label>
+                <input type="checkbox"> Donate R5 to a Children's Charity
+            </label>
+
+            <div style="margin-top: 20px;">
+             
+            <a href="OrderConfirmationPage.html" style="text-decoration: none;">
+                <button style="background: #28a745; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 16px;">
+                   Secure Checkout
+                 </button>
+            </a>
+            </div>
+        </div>
+
+       
+    </div>
+
+</body>
+</html>
